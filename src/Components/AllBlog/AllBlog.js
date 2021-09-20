@@ -5,7 +5,7 @@ const AllBlog = () => {
     const [blogItems, setBlogItems] = useState([]);
 
     useEffect(() => {
-        fetch('')
+        fetch('http://localhost:5000/contents')
         .then(res => res.json())
         .then(data => setBlogItems(data))
     }, []);

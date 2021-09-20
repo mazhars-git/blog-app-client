@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import AddContent from './Components/AddContent/AddContent';
+import BlogDetails from './Components/BlogDetails/BlogDetails';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route path="/addContent">
             <AddContent />
+        </Route>
+        <Route path="/details/:_id">
+            <BlogDetails />
         </Route>
       </Switch>
     </Router>
