@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import MainMenu from '../MainMenu/MainMenu';
+import Sidebar from '../Sidebar/Sidebar';
 
 const AddContent = () => {
     const [info, setInfo] = useState({});
@@ -36,9 +38,12 @@ const AddContent = () => {
 
 
     return (
-        <section className="container">
+        <section className="container add-content">
             <div className="row">
-                <div className="col-md-2"></div>
+                <MainMenu />
+                <div className="col-md-2">
+                    <Sidebar />
+                </div>
                 <div className="col-md-10">
                     <h2 className="text-center">Add your content</h2>
                    

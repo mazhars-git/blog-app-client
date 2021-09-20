@@ -1,10 +1,15 @@
 import React from 'react';
+import AllBlog from '../AllBlog/AllBlog';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 const Home = () => {
     return (
-        <div>
-            
-        </div>
+        <section>
+            <Header />
+            <AllBlog />
+            <Footer />
+        </section>
     );
 };
 
