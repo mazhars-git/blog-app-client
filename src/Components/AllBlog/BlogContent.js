@@ -7,8 +7,8 @@ const BlogContent = (props) => {
     return (
         <div className="col-md-4 align-self-center">
             <Link to={`/details/${_id}`}>
-                <div className="card text-center">
-                    <img className="img-fluid" src={`data:image/png;base64, ${image.img}`} />
+                <div className="blog-item text-center">
+                    <img className="img-fluid pb-2" src={`data:image/png;base64, ${image.img}`} />
                     <h5>{title}</h5>
                 </div>
             </Link>

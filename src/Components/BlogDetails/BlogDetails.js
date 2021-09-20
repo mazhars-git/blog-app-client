@@ -20,8 +20,8 @@ const BlogDetails = () => {
         <section className="container">
             <MainMenu />
             <div className="row py-5">
-                <img className="img-fluid" src={`data:image/png;base64, ${image.img}`} />
-                <h2>{title}</h2>
+                <img className="img-fluid" src={`data:image/png;base64, ${image}`} />
+                <h2 className="text-center py-3">{title}</h2>
                 <p>{content}</p>
             </div>
         </section>
