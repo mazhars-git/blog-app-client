@@ -5,7 +5,7 @@ const AllBlog = () => {
     const [blogItems, setBlogItems] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/contents')
+        fetch('https://floating-atoll-04601.herokuapp.com/contents')
         .then(res => res.json())
         .then(data => setBlogItems(data))
     }, []);

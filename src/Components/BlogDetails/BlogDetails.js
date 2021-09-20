@@ -9,7 +9,7 @@ const BlogDetails = () => {
     const {title, content, image} = blogDetails;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/details/${_id}`)
+        fetch(`https://floating-atoll-04601.herokuapp.com/details/${_id}`)
         .then(res => res.json())
         .then(data => setBlogDetails(data))
 

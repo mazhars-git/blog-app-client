@@ -23,7 +23,7 @@ const AddContent = () => {
         formData.append('title', info.title);
         formData.append('content', info.content);
 
-        fetch('http://localhost:5000/addContent', {
+        fetch('https://floating-atoll-04601.herokuapp.com/addContent', {
             method: 'POST',
             body: formData
         })
